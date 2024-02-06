@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: arc-runner-set # ubuntu-latest
+    runs-on: self-hosted # ubuntu-latest
     steps:
       - run: echo "🎉 This job uses runner scale set runners! - push v1"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
